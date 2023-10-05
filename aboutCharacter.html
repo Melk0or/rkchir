@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Disney</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="accets/css/style.css" type="text/css">
+      <link rel="icon" href="/accets/image/favicon.ico" sizes="any">
+  </head>
+  <body>
+  <header>
+    <div class="header__container">
+      <div class="header_icon">Disney Characters</div>
+      <nav class="nav">
+        <ul class="header_navigation">
+          <li><a href="index1.html" >Главная</a></li>
+          <li><a href="aboutCharacter.html"  >Персонажи</a></li>
+          <li><a href="#sector1" >О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <main>
+      <div style="text-align: center;"> 
+        <h1 id="top"> Персонажи Disney </h1> 
+      </div>
+      <section>
+        <h2>О нас</h2>
+        <p>Это простой и увлекательный сайт, посвященный персонажам Disney. Здесь вы найдете информацию о различных персонажах, 
+        их истории, а также сможете насладиться красочными иллюстрациями.</p>
+      </section>
+      <section>
+        <h2>Галерея персонажей</h2>
+        <div class="gallery">
+          <img src="accets/image/bel.webp" alt="Белоснежка и семь гномов">
+          <img src="accets/image/bembi.webp" alt="Бемби">
+          <img src="accets/image/ledibrodyaga.webp" alt="Леди и Бродяга">
+          <img src="accets/image/kniga.webp" alt="Книга джунглей">
+          <img src="accets/image/cats.webp" alt="Коты-аристократы">
+          <img src="accets/image/rusalochka.webp" alt="Русалочка">
+          <img src="lion.webp" alt="Король Лев">
+          <img src="accets/image/lilo.webp" alt="Лило и Стич">
+          <img src="accets/image/rapuncel.webp" alt="Рапунцель">
+        </div>
+      </section>
+      <article>
+        <div style="text-align: right;">
+          <a href="https://www.disney.com">
+              <img src="accets/image/image6.jpeg" alt="Изображение-ссылка" class="photo" width="400" height="300">
+            </a>
+        </div>
+        <h2> Выбери персонажа:</h2>
+          <ul>
+            <li><a href="#" class = "main_article-link">Персонажи из мультфильма "Белоснежка и семь гномов"</a></li>
+            <li><a href="#" class = "main_article-link">Персонажи из мультфильма "Бемби"</a></li>
+            <li><a href="#" class = "main_article-link">Персонажи из мультфильма "Леди и Бродяга"</a></li>
+            <li><a href="#" class = "main_article-link">Персонажи из мультфильма "Книга Джунглей"</a></li>
+            <li><a href="#" class = "main_article-link">Персонажи из мультфильма "Коты-аристократы"</a></li>
+            <li><a href="#" class = "main_article-link">Персонажи из мультфильма "Русалочка"</a></li>
+            <li><a href="#" class = "main_article-link">Персонажи из мультфильма "Король лев"</a></li>
+            <li><a href="#" class = "main_article-link">Персонажи из мультфильма "Лило и Стич"</a></li>
+            <li><a href="index1.html" class = "main_article-link">Персонажи из мультфильма "Рапунцель. Запутанная История"</a></li>
+          </ul>
+      </article>
+      <form action="обработчик.php" method="post">
+        <fieldset>
+          <legend>Личная информация</legend>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" minlength="8" required>
+          <br>
+          <label for="photo">Фото:</label>
+          <input type="file" id="photo" name="photo" accept="image/*" required>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Дополнительная информация</legend>
+          <label for="checkbox">Чекбокс:</label>
+          <input type="checkbox" id="checkbox" name="checkbox">
+          <br>
+          <label for="radio1">Радио 1:</label>
+          <input type="radio" id="radio1" name="radio" value="1">
+          <label for="radio2">Радио 2:</label>
+          <input type="radio" id="radio2" name="radio" value="2">
+          <br>
+          <label for="datetime">Дата и время:</label>
+          <input type="datetime-local" id="datetime" name="datetime">
+        </fieldset>
+        
+        <button type="submit">Отправить</button>
+      </form>
+      
+      <div style="text-align: center;">
+        <h3><a href="#top">Вернуться в начало страницы</a></h3>
+      </div>
+    </main>
+    <footer>
+      <address><h3 id="contacts"> Контакты</h3></address>
+      <p><a href="https://www.disney.com">Официальный сайт Disney</a></p>
+      <p><a href="tel:+79017490546">Телефон</a></p>
+      <p><a href="mailto:sonvhx@icloud.com">Почтовый клиент</a></p>
+    </footer>
+  </body>
+</html>

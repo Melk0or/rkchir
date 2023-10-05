@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    font-family: 'Manrope'; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    line-height: 30px;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: #151515;
+  }
+  
+/*HEADER*/
+
+header {
+  margin: 0 15px;
+  background-color: #fff;
+  position: fixed;
+  min-width: 100vw;
+}
+
+.header__container {
+  display: flex;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_navigation {
+  font-size: 15px;
+  flex-grow: 1;
+  transition: .4s ease;
+  font-family: 'Playfair Display SC', serif;
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  background: #ffffff;
+}
+
+.header_navigation > li > a {
+  position: relative;
+  font-size: 17px;
+  transition: .4s ease;
+  display: inline;
+}
+
+.header_navigation > li > a:after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  bottom: -6%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: #ec9ae1;
+  transition:  .4s ease ;
+}
+
+.header_navigation > li > a:hover::after {
+  transform: scaleX(1);
+}
+
+.header_navigation > li > a:hover {
+  color: #ec9ae1;
+}
+
+.header_icon {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+  
+  .photo {
+    float: right; 
+    margin: 0px 300px 10px 0px; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+   /* Стили для логотипа */
+  .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  /* Стили для заголовков секций */
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
+h1{
+    font-family: 'Playfair Display SC', serif;
+}
+  
+  /* Стили для независимых секций */
+  article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .main_article-link {
+    font-size: 15px;
+    transition: .4s ease;
+  }
+  
+  .main_article-link:hover {
+    color: #ae68e7;
+    border-bottom: 2px solid #ae68e7;
+  }
+  .main_article-link:active {
+    color: #ae68e7;
+  }
+  .main_article-link :visited {
+    color: gray;
+  }
+      
+  /* Стили для подвала сайта */
+  footer {
+    background-color: #ffdbff;
+    padding: 20px;
+    text-align: left;
+  }
+        
+  footer h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+        
+  footer p {
+    margin-bottom: 5px;
+  }
+        
+  footer a.active {
+    color: #ae68e7;
+  }
+  
+  footer a.visited {
+    color: gray;;
+  }
+     
+  footer a:hover {
+    color: #ae68e7;
+    border-bottom: 2px solid #ae68e7;
+  }
+  
+  footer h3, footer p {
+    margin: 2px 0;
+  }
+  
+  /* Стили для информации о разработчике */
+  address {
+    font-style: italic;
+  }
+  
+  address > h3 {
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  img {
+    float: right; /*выравнивание по правому краю*/
+    margin-right: 1rem; /*отступ справа*/
+  }
+
+  .gallery {
+    display: flex; /*элементы расположены горизонтально*/
+    white-space: nowrap; /*фото не переносились на следующую строку*/
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /*заполненность*/
+    margin-right: 10px; 
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  }
+  .registration {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video-container {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .video-container iframe {
+    display: block;
+  }
+  
